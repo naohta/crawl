@@ -1,3 +1,3 @@
-source "https://rubygems.org"
-gem "net/http"
-gem "lhalib", :path => "./"
+#source "https://rubygems.org"
+gem "lhalib", "=0.8.1", path:"gems"
+

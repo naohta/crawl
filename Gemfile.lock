@@ -1,0 +1,13 @@
+PATH
+  remote: gems
+  specs:
+    lhalib (0.8.1)
+
+GEM
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  lhalib (= 0.8.1)!
