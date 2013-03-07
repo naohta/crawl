@@ -27,10 +27,5 @@ LhaLib::x(file_name) do |info|
   system "mv #{info[:name]} #{DOWNLOAD_DIR}kihon_bu.xls"
 end
 
-cmd = "echo hi!"
-`#{cmd}`
 
-system "ls"
-p "yay!"
-exec "#{cmd}"
-p "wow!"
+p system "ls"
