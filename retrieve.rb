@@ -28,4 +28,4 @@ LhaLib::x(file_name) do |info|
 end
 
 
-p system "ls"
+p system "ls downloaded/"
