@@ -1,2 +1,2 @@
 #source "https://rubygems.org"
-gem "lhalib", :path => "gems"
+gem "lhalib", "=0.8.1", path:"gems"
