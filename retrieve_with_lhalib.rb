@@ -1,6 +1,7 @@
 #encode:utf-8
 require 'net/http'
 require 'digest/md5'
+require 'lhalib'
 require 'nkf'
 require 'shell'
 
@@ -19,5 +20,12 @@ File.open(file_name,"wb") do |f|
   f.print res.body
 end
 puts Digest::MD5.file(file_name).hexdigest
+
+LhaLib::x(file_name) do |info|
+  puts info
+  puts NKF.guess info[:name]
+  system "mv #{info[:name]} #{DOWNLOAD_DIR}kihon_bu.xls"
+end
+
 
 p system "ls downloaded/"
